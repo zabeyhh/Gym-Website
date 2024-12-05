@@ -1,80 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Membership</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gym Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>FitLife Gym</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#registration">Registration</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="banner">
-            <h2>Welcome to FitLife Gym!</h2>
-            <p>Your journey to fitness starts here.</p>
-        </div>
-    </section>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#signup">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="pricing">
-        <h2>Membership Pricing</h2>
-        <div class="pricing-tiers">
-            <div class="tier">
-                <h3>Basic Plan</h3>
-                <p>₹1,500/month</p>
-                <p>Access to gym equipment</p>
-            </div>
-            <div class="tier">
-                <h3>Premium Plan</h3>
-                <p>₹2,500/month</p>
-                <p>Access to gym equipment + Group classes</p>
-            </div>
-            <div class="tier">
-                <h3>Elite Plan</h3>
-                <p>₹3,500/month</p>
-                <p>All Premium benefits + Personal Trainer</p>
-            </div>
-        </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to Our Gym</h1>
+      <p>Get fit, get strong, and achieve your fitness goals with us!</p>
+      <a href="#signup" class="btn">Join Now</a>
+    </div>
+  </section>
 
-    <section id="registration">
-        <h2>Register Now</h2>
-        <form action="#" method="post" id="registration-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a leading gym providing world-class fitness training and facilities to help you achieve your fitness goals. Our experienced trainers are here to guide you on every step of your fitness journey.</p>
+  </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <h3>Personal Training</h3>
+      <p>Customized workout plans to suit your fitness needs.</p>
+    </div>
+    <div class="service">
+      <h3>Group Classes</h3>
+      <p>Join our fun and dynamic group fitness classes.</p>
+    </div>
+    <div class="service">
+      <h3>Nutrition Guidance</h3>
+      <p>Get personalized nutrition advice to fuel your workouts.</p>
+    </div>
+  </section>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-            <label for="plan">Choose a Plan:</label>
-            <select id="plan" name="plan" required>
-                <option value="basic">Basic Plan</option>
-                <option value="premium">Premium Plan</option>
-                <option value="elite">Elite Plan</option>
-            </select>
+  <!-- Sign Up Section -->
+  <section id="signup">
+    <h2>Sign Up</h2>
+    <form action="#" method="POST">
+      <label for="signup-name">Full Name</label>
+      <input type="text" id="signup-name" name="signup-name" required>
+      <label for="signup-email">Email Address</label>
+      <input type="email" id="signup-email" name="signup-email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+  </section>
 
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Gym Website. All rights reserved.</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2024 FitLife Gym. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

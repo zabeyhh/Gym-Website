@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>FitLife Gym</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h2>Welcome to FitLife Gym!</h2>
+            <p>Your journey to fitness starts here.</p>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Membership Pricing</h2>
+        <div class="pricing-tiers">
+            <div class="tier">
+                <h3>Basic Plan</h3>
+                <p>₹1,500/month</p>
+                <p>Access to gym equipment</p>
+            </div>
+            <div class="tier">
+                <h3>Premium Plan</h3>
+                <p>₹2,500/month</p>
+                <p>Access to gym equipment + Group classes</p>
+            </div>
+            <div class="tier">
+                <h3>Elite Plan</h3>
+                <p>₹3,500/month</p>
+                <p>All Premium benefits + Personal Trainer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <h2>Register Now</h2>
+        <form action="#" method="post" id="registration-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="plan">Choose a Plan:</label>
+            <select id="plan" name="plan" required>
+                <option value="basic">Basic Plan</option>
+                <option value="premium">Premium Plan</option>
+                <option value="elite">Elite Plan</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FitLife Gym. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
